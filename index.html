@@ -1816,53 +1816,53 @@ body .do-developers *, .do-developers *{opacity: 1!important;text-indent:0!impor
  <script src="./js/wow.min.js"></script>
  <script type="text/javascript">
 
-$(function(){
+// $(function(){
  
  
 
- var wow = new WOW({
- animateClass: 'animated',
- offset: 100,
- callback:function(box) { }
- });
- wow.init();
+//  var wow = new WOW({
+//  animateClass: 'animated',
+//  offset: 100,
+//  callback:function(box) { }
+//  });
+//  wow.init();
  
- if(isWeiXin() && bIsAndroid){
- var fullArea = $(".do-area-fullHeight .do-row-one > .do-row, .do-slide-full");
- fullArea.height($(window).height());
- }
+//  if(isWeiXin() && bIsAndroid){
+//  var fullArea = $(".do-area-fullHeight .do-row-one > .do-row, .do-slide-full");
+//  fullArea.height($(window).height());
+//  }
 
- if(head.desktop){
- if(!_vm.online) $("#do-online-service").prop("checked",true);
- }else{
- $("#do-online-service").prop("checked",false);
- }
-
- 
- if(bIsAndroid){
- $(".do-area-videobg").find("video").remove();
- var vodbgObj = $(".do-area-videobg .do-area-bg-conter");
- vodbgObj.each(function(){
- $(this).css('background-image','url("'+$(this).data("vodbg")+'")');
- });
- }
+//  if(head.desktop){
+//  if(!_vm.online) $("#do-online-service").prop("checked",true);
+//  }else{
+//  $("#do-online-service").prop("checked",false);
+//  }
 
  
- var weixinBtn = $(".weixinBtn"),
- popwximg = $(".do-popwximg");
- if(weixinBtn.length){
- weixinBtn.on("click",function(e){
- popwximg.show();
- });
- popwximg.on("click",".do-close",function(){
- popwximg.hide();
- });
- }
+//  if(bIsAndroid){
+//  $(".do-area-videobg").find("video").remove();
+//  var vodbgObj = $(".do-area-videobg .do-area-bg-conter");
+//  vodbgObj.each(function(){
+//  $(this).css('background-image','url("'+$(this).data("vodbg")+'")');
+//  });
+//  }
+
+ 
+//  var weixinBtn = $(".weixinBtn"),
+//  popwximg = $(".do-popwximg");
+//  if(weixinBtn.length){
+//  weixinBtn.on("click",function(e){
+//  popwximg.show();
+//  });
+//  popwximg.on("click",".do-close",function(){
+//  popwximg.hide();
+//  });
+//  }
 
 
  
 
-});
+// });
 
 
 </script>
